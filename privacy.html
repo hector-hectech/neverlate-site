@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  NeverLate — Privacy Policy
+  NeverLate Privacy Policy
   ============================
   BEFORE PUBLISHING, fill in the four placeholders (search for "[[ ]]"):
     [[DEVELOPER]]      e.g. "Hector Rodriguez" or your company name
@@ -15,7 +15,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NeverLate — Privacy Policy</title>
+  <title>NeverLate Privacy Policy</title>
   <style>
     :root {
       --cream: #FBF7EF;
@@ -56,7 +56,7 @@
   <div class="wrap">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="updated">NeverLate · Last updated: 18 July 2026</p>
+      <p class="updated">NeverLate · Last updated: 23 August 2026</p>
     </header>
 
     <div class="summary">
@@ -64,7 +64,7 @@
       <ul>
         <li>Your events, plans and reminders live <strong>on your device</strong>. We don't keep a copy on our servers.</li>
         <li>We <strong>never sell your data</strong>, and we don't track you across other apps or websites for advertising.</li>
-        <li>A few features need to send specific data to trusted service providers to work — for example, scanning an image to pull out an event, or working out your travel time. Details below.</li>
+        <li>A few features need to send specific data to trusted service providers to work, for example scanning an image to pull out an event, or working out your travel time. Details below.</li>
         <li>NeverLate has <strong>paid plans</strong>. Payments are handled by Apple, so we never see your card or payment details.</li>
         <li>There is <strong>no account and no sign-up</strong>. Deleting the app removes its local data; calendar entries already shared with Apple Calendar may remain there until you remove them.</li>
       </ul>
@@ -78,16 +78,21 @@
     <h2>Calendar access</h2>
     <p>If you allow it, NeverLate reads events from the device calendars you connect so it can show and plan around them. Reading is enabled per calendar. You can separately choose a calendar where events you create in NeverLate are copied, and you can allow NeverLate to edit or delete events in a particular calendar. Shared categories are written as a visible NeverLate tag in the calendar event's notes. If you choose to transfer reminders to NeverLate, the app temporarily removes supported alarms from the source calendar event, stores a local copy, and restores them when the transfer is undone.</p>
 
+    <h2>App blocking (Screen Time)</h2>
+    <p>App blocking is optional and off unless you turn it on. If you do, NeverLate uses Apple’s Screen Time to pause apps and websites you choose around the events you mark as must-not-miss. You pick them in Apple’s own picker, and Apple deliberately keeps that selection private. NeverLate is never told which apps or websites you chose, and it cannot see what you open or how long you spend there. The block runs on your phone and lifts by itself when the event starts, and the block screen offers a two-minute unlock whenever you need one. You can switch the feature off in NeverLate’s alert settings, or withdraw Screen Time access in the iOS Settings app, at any time.</p>
+
     <h2>Where some data goes, and why</h2>
     <p>To make certain features work, the app sends limited data to the service providers below. Each is used only for the purpose listed.</p>
     <ul>
-      <li><strong>Scanning an image for an event</strong> — when you add an event from a photo or screenshot, that image is sent to our event-extraction provider (<strong>Google Gemini</strong>) to detect the date, time, place and other details. Where possible, parts of this happen on your device using Apple's on-device text recognition. Images are processed to read the event and are not used to build an advertising profile.</li>
-      <li><strong>Travel times, directions, place searches and parking</strong> — when you plan a trip or search for a place, your search, location and the relevant addresses are sent to <strong>Google Maps / Places / Directions</strong> to return results, estimate how long it takes to get there and find nearby parking. Google's app software may also process a device identifier and technical usage, performance and crash information to operate and improve these services.</li>
-      <li><strong>Backend processing</strong> — some of the above is routed through <strong>Firebase</strong> (Google) cloud services that we use to run the app's processing.</li>
-      <li><strong>Usage analytics</strong> — we use <strong>PostHog</strong> (hosted in the EU) to understand how the app is used — which screens are opened and which features are used — so we can improve it. This is our own product analytics, not advertising tracking.</li>
-      <li><strong>Google Ads conversion measurement</strong> — we use <strong>Google Analytics for Firebase</strong> to measure whether our own adverts lead to an install or a small set of actions in NeverLate, such as creating an event, starting a trial, allowing notifications, or completing a purchase. Google may process an app-installation identifier, device and app information, approximate region, session information, and those limited actions for analytics and advertising measurement. NeverLate does not send event titles, locations, dates, images, feedback, or other free text through this service. The app does not collect Apple's advertising identifier, advertising personalisation is disabled, and this is not used to track you across other companies' apps or websites.</li>
-      <li><strong>Apple Ads attribution</strong> — if Apple reports that an install came from an Apple Search Ads campaign, the app may send campaign attribution details (such as campaign, ad group or keyword identifiers) to PostHog so we can measure which of our own App Store adverts led to installs. We do not use this to track you across other companies' apps or websites.</li>
-      <li><strong>Subscriptions and purchases</strong> — NeverLate offers paid plans (monthly, yearly, or a one-time Lifetime purchase). Payments are handled entirely by Apple's App Store, so we never see your card or payment details. We use <strong>RevenueCat</strong> to check and manage your subscription status. RevenueCat receives the App Store purchase record (what was bought and when), linked to a random, app-generated ID — not your name, email or Apple Account — and we use it only to unlock and restore the features you've paid for.</li>
+      <li><strong>Scanning an image for an event</strong>: when you add an event from a photo or screenshot, that image is sent to our event-extraction provider (<strong>Google Gemini</strong>) to detect the date, time, place and other details. Where possible, parts of this happen on your device using Apple's on-device text recognition. Images are processed to read the event and are not used to build an advertising profile.</li>
+      <li><strong>Travel times, directions, place searches and parking</strong>: when you plan a trip or search for a place, your search, location and the relevant addresses are sent to <strong>Google Maps / Places / Directions</strong> to return results, estimate how long it takes to get there and find nearby parking. Google's app software may also process a device identifier and technical usage, performance and crash information to operate and improve these services.</li>
+      <li><strong>Backend processing</strong>: some of the above is routed through <strong>Firebase</strong> (Google) cloud services that we use to run the app's processing.</li>
+      <li><strong>Service notifications</strong>: if you allow notifications, NeverLate sends Apple's current delivery address for this installation to our Firebase backend so we can send useful service messages through <strong>Apple Push Notification service</strong>. We also keep the app version, language, release channel and any internal group label needed to choose the right recipients. We do not upload your events, plans, reminder schedules or notification text from your phone. The delivery address is removed when notification access is withdrawn or Apple reports that it is no longer valid.</li>
+      <li><strong>Usage analytics</strong>: we use <strong>PostHog</strong> (hosted in the EU) to understand how the app is used, meaning which screens are opened and which features are used, so we can improve it. This is our own product analytics, not advertising tracking.</li>
+      <li><strong>Private check-ins, feedback and feature requests</strong>: if you answer an in-app enjoyment check-in or choose to send feedback from the check-in or Settings, your answer, the category you select and any message you write are sent to <strong>PostHog</strong> so we can read and act on them. These responses are connected to the app's random installation identifier and its app activity, which helps us understand the context of a problem. They are not posted publicly, and NeverLate does not ask for your name or email in these forms.</li>
+      <li><strong>Google Ads conversion measurement</strong>: we use <strong>Google Analytics for Firebase</strong> to measure whether our own adverts lead to an install or a small set of actions in NeverLate, such as creating an event, starting a trial, allowing notifications, or completing a purchase. Google may process an app-installation identifier, device and app information, approximate region, session information, and those limited actions for analytics and advertising measurement. NeverLate does not send event titles, locations, dates, images, feedback, or other free text through this service. The app does not collect Apple's advertising identifier, advertising personalisation is disabled, and this is not used to track you across other companies' apps or websites.</li>
+      <li><strong>Apple Ads attribution</strong>: if Apple reports that an install came from an Apple Search Ads campaign, the app may send campaign attribution details (such as campaign, ad group or keyword identifiers) to PostHog so we can measure which of our own App Store adverts led to installs. We do not use this to track you across other companies' apps or websites.</li>
+      <li><strong>Subscriptions and purchases</strong>: NeverLate offers paid plans (monthly, yearly, or a one-time Lifetime purchase). Payments are handled entirely by Apple's App Store, so we never see your card or payment details. We use <strong>RevenueCat</strong> to check and manage your subscription status. RevenueCat receives the App Store purchase record (what was bought and when), linked to a random, app-generated ID, not your name, email or Apple Account, and we use it only to unlock and restore the features you've paid for.</li>
     </ul>
     <p>These providers handle data under their own privacy policies:
       <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google</a>,
@@ -98,12 +103,13 @@
 
     <h2>Permissions the app may ask for</h2>
     <ul>
-      <li><strong>Calendar</strong> — to read and plan around connected events and, only where you enable the relevant calendar controls, copy, edit or delete calendar entries and transfer their supported alarms.</li>
-      <li><strong>Location</strong> — to work out travel time from where you are and find parking. Used when you're planning a trip.</li>
-      <li><strong>Photos</strong> — for images you choose to scan and, if you turn on Snap to Calendar, to notice newly added screenshots that may contain event details.</li>
-      <li><strong>Notifications &amp; alarms</strong> — to remind you at the right moments, including must-not-miss alarms you set yourself.</li>
+      <li><strong>Calendar</strong>: to read and plan around connected events and, only where you enable the relevant calendar controls, copy, edit or delete calendar entries and transfer their supported alarms.</li>
+      <li><strong>Location</strong>: to work out travel time from where you are and find parking. Used when you're planning a trip.</li>
+      <li><strong>Photos</strong>: for images you choose to scan and, if you turn on Snap to Calendar, to notice newly added screenshots that may contain event details.</li>
+      <li><strong>Screen Time</strong>: only if you turn on app blocking, so NeverLate can pause the apps and websites you choose around your must-not-miss events. Apple keeps your selection private from us.</li>
+      <li><strong>Notifications &amp; alarms</strong>: to remind you at the right moments, receive useful service messages, and deliver must-not-miss alarms you set yourself.</li>
     </ul>
-    <p>You can change any of these any time in the iOS <strong>Settings</strong> app. If you turn one off, the related feature simply won't run — the rest of the app keeps working.</p>
+    <p>You can change any of these any time in the iOS <strong>Settings</strong> app. If you turn one off, the related feature simply won't run. The rest of the app keeps working.</p>
 
     <h2>What we don't do</h2>
     <ul>
@@ -125,7 +131,7 @@
     <p>Questions about privacy? Email <a href="mailto:neverlatesupport@gmail.com">neverlatesupport@gmail.com</a>.</p>
 
     <footer>
-      NeverLate · <a href="support.html">Support</a> · Last updated 18 July 2026
+      NeverLate · <a href="support.html">Support</a> · Last updated 23 August 2026
     </footer>
   </div>
 </body>
